@@ -104,6 +104,11 @@ public class WordStore implements Store<Word>, AutoCloseable {
     }
 
     @Override
+    public List<Word> saveAll(List<Word> models) {
+        return null;
+    }
+
+    @Override
     public void close() throws Exception {
         if (connection != null) {
             connection.close();
